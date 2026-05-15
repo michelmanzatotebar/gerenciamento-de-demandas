@@ -1,6 +1,6 @@
 package model;
 
-public class Usuario {
+public class usuario {
 
     // Atributos
     private String nome;
@@ -8,7 +8,7 @@ public class Usuario {
     private String status;
 
     // Construtor
-    public Usuario(String nome, String funcao, String status) {
+    public usuario(String nome, String funcao, String status) {
         this.nome = nome;
         this.funcao = funcao;
         this.status = status;
