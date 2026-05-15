@@ -1,39 +1,37 @@
 package models;
 
-public class usuario {
+public class perfil {
 
     // Atributos
     private String nome;
-    private String funcao;
+    private String local;
     private String status;
 
     // Construtor
-    public usuario(String nome, String funcao, String status) {
+    public perfil(String nome, String local, String status) {
         this.nome = nome;
-        this.funcao = funcao;
+        this.local = local;
         this.status = status;
     }
-
 
     public String getNome() {
         return nome;
     }
 
-    public String getFuncao() {
-        return funcao;
+    public String getLocal() {
+        return local;
     }
 
     public String getStatus() {
         return status;
     }
 
-
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setFuncao(String funcao) {
-        this.funcao = funcao;
+    public void setLocal(String local) {
+        this.local = local;
     }
 
     public void setStatus(String status) {
