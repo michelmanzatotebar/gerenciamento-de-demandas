@@ -1,37 +1,39 @@
-package models;
+package com.michel.gerenciamento.demandas.models;
 
-public class perfil {
+public class usuario {
 
     // Atributos
     private String nome;
-    private String local;
+    private String funcao;
     private String status;
 
     // Construtor
-    public perfil(String nome, String local, String status) {
+    public usuario(String nome, String funcao, String status) {
         this.nome = nome;
-        this.local = local;
+        this.funcao = funcao;
         this.status = status;
     }
+
 
     public String getNome() {
         return nome;
     }
 
-    public String getLocal() {
-        return local;
+    public String getFuncao() {
+        return funcao;
     }
 
     public String getStatus() {
         return status;
     }
 
+
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setLocal(String local) {
-        this.local = local;
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
 
     public void setStatus(String status) {

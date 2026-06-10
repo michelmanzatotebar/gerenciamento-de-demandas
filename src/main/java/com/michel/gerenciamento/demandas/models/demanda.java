@@ -1,4 +1,4 @@
-package models;
+package com.michel.gerenciamento.demandas.models;
 
 import java.util.ArrayList;
 import java.util.Date;
