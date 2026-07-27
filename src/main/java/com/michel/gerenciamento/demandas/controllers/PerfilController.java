@@ -40,8 +40,13 @@ public class PerfilController {
     }
 
     @PostMapping
-    public ResponseEntity<Perfil> criar(@RequestBody Perfil perfil) {
+    public ResponseEntity<?> criar(@RequestBody Perfil perfil) {
+    try {
         Perfil salvo = perfilRepository.save(perfil);
         return ResponseEntity.ok(salvo);
+    } catch (DataAccessException ex) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body("sem conexao com banco");
+    }
     }
 }
