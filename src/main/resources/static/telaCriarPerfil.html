@@ -40,17 +40,17 @@
                 <label class="form-label">Status</label>
                 <div class="row g-2" role="group" aria-label="Status do perfil">
                   <div class="col-12 col-lg-4">
-                    <input type="radio" class="btn-check" name="status" id="statusAtivo" autocomplete="off" checked>
+                    <input type="radio" class="btn-check" name="status" id="statusAtivo" value="Ativo" autocomplete="off" checked>
                     <label class="btn btn-outline-primary w-100" for="statusAtivo">Ativo</label>
                   </div>
 
                   <div class="col-12 col-lg-4">
-                    <input type="radio" class="btn-check" name="status" id="statusInativo" autocomplete="off">
+                    <input type="radio" class="btn-check" name="status" id="statusInativo" value="Inativo" autocomplete="off">
                     <label class="btn btn-outline-primary w-100" for="statusInativo">Inativo</label>
                   </div>
 
                   <div class="col-12 col-lg-4">
-                    <input type="radio" class="btn-check" name="status" id="statusArquivado" autocomplete="off">
+                    <input type="radio" class="btn-check" name="status" id="statusArquivado" value="Arquivado" autocomplete="off">
                     <label class="btn btn-outline-primary w-100" for="statusArquivado">Arquivado</label>
                   </div>
                 </div>
@@ -59,7 +59,8 @@
 
             <div class="d-grid d-lg-flex justify-content-lg-end gap-2 mt-4">
               <a href="index.html" class="btn btn-outline-light px-lg-4">Voltar</a>
-              <button type="button" class="btn btn-primary px-lg-4">Criar Perfil</button>
+              <button type="button" id="btnCriarPerfil" class="btn btn-primary px-lg-4">Criar Perfil</button>
+              <span id="msg-erro" class="text-danger small ms-2 align-self-center"></span>
             </div>
           </form>
         </div>
@@ -67,6 +68,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/criarPerfil.js"></script>
 </body>
 </html>
